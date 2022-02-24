@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <link rel="stylesheet" href="Assets/style.css">
+   <script src="https://kit.fontawesome.com/398efa689c.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <title>WatchFlix</title>
+</head>
+<body>
+   <div class="fake_container"></div>
+   <div class="loading_container">
+      <h1 class="stroke">WatchFlix<span class="stroke-span">.</span></h1>
+      <div class="load">
+         <h1 class="w">W</h1>
+         <h1 class="a">a</h1>
+         <h1 class="t">t</h1>
+         <h1 class="c">c</h1>
+         <h1 class="h">h</h1>
+         <h1 class="f">F</h1>
+         <h1 class="l">l</h1>
+         <h1 class="i">i</h1>
+         <h1 class="x">x</h1>
+         <h1><span class="non-stroke-span">.</span></h1>
+      </div>
+   </div>
+   <aside class="options_container dark-mode">
+      <div class="options_container-header">
+         <a href="#!">
+            <h1>WatchFlix<span>.</span></h1>
+         </a>
+      </div>
+      <div class="options_container-menu">
+         <h4>Menu</h4>
+         <ul>
+            <li class="active"><a href="#!">
+               <i class="fa-solid fa-compass"></i>
+               Browse
+            </a></li>
+            <li><a href="#!">
+               <i class="fa-regular fa-heart"></i>
+               Watchlist
+            </a></li>
+            <li><a href="#!">
+               <i class="fa-regular fa-calendar"></i>
+               Coming Soon
+            </a></li>
+         </ul>
+      </div>
+      <div class="options_container-tools">
+         <h4>General</h4>
+         <ul>
+            <li><a href="#!">
+               <i class="fa-solid fa-gears"></i>
+               Settings
+            </a></li>
+            <li><a href="#!">
+               <i class="fa-solid fa-right-from-bracket"></i>
+               Log out
+            </a></li>
+         </ul>
+      </div>
+      <div class="mode-toggle">
+         <label class="dark-mode-switcher" id="dark-mode-switcher">
+            <div class="main-body"></div>
+            <div class="shadow">
+               <div></div>
+            </div>
+            <div class="sunray --1">
+               <div></div>
+            </div>
+            <div class="sunray --2">
+               <div></div>
+            </div>
+            <div class="sunray --3">
+               <div></div>
+            </div>
+            <div class="sunray --4">
+               <div></div>
+            </div>
+            <div class="sunray --5">
+               <div></div>
+            </div>
+            <div class="sunray --6">
+               <div></div>
+            </div>
+         </label>
+      </div>
+   </aside>
+   <main class="main_container dark-mode">
+      <div class="main_container-header">
+         <div class="main_container_search">
+            <div class="main_container_search-input">
+               <i class="fas fa-magnifying-glass"></i>
+               <input placeholder="Search..." type="text" id="serach-input" onkeyup="setSearchMovie()">
+            </div>
+            <div class="main_container_search-content">
+               <ul class="main_container_search-list">
+               </ul>
+            </div>
+         </div>
+         <div class="main_container_tools">
+            <div class="main_container_tools-icon" id="notification">
+               <i class="fa-regular fa-bell"></i>
+               <div class="main_container_tools-icon-model notification">
+                  <div class="main_container_tools-icon-model_header">
+                  <h2 class="model_header-title">Notifications</h2>
+                     <button class="model_header-btn">
+                        <span>
+                           <i class="fas fa-check"></i>
+                           <i class="fas fa-check"></i>
+                        </span>
+                        Mark as Read
+                     </button>
+                  </div>
+                  <div class="main_container_tools-icon-model_content">
+                     <ul>
+                        <li>
+                           <div class="main_container_tools-icon-model_content-title">
+                              <h3>Your password has been changed</h3>
+                              <h4>jul 23, 2021 at 09:15 PM</h4>
+                           </div>
+                           <div class="main_container_tools-icon-model_content-img">
+                              <i class="fas fa-lock"></i>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="main_container_tools-icon-model_content-title">
+                              <h3>Your password has been changed</h3>
+                              <h4>jul 23, 2021 at 09:15 PM</h4>
+                           </div>
+                           <div class="main_container_tools-icon-model_content-img">
+                              <i class="fas fa-lock"></i>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="main_container_tools-icon-model_base">
+                     <button>
+                        view all notifications
+                     </button>
+                  </div>
+               </div>
+               <div class="redDote"></div>
+            </div>
+            <div class="main_container_tools-icon" id="messaging">
+               <i class="fa-regular fa-comment-dots"></i>
+               <div class="main_container_tools-icon-model messaging .dark-mode">
+                  <div class="main_container_tools-icon-model_header">
+                  <h2 class="model_header-title">Messaging</h2>
+                     <button class="model_header-btn">
+                        <span>
+                           <i class="fas fa-check"></i>
+                           <i class="fas fa-check"></i>
+                        </span>
+                        Mark as Read
+                     </button>
+                  </div>
+                  <div class="main_container_tools-icon-model_content">
+                     <ul>
+                        <li>
+                           <div class="main_container_tools-icon-model_content-title">
+                              <h3>Your have 5 unread messages </h3>
+                              <h4>jul 23, 2021 at 09:15 PM</h4>
+                           </div>
+                           <div class="main_container_tools-icon-model_content-img">
+                              <i class="fas fa-envelope"></i>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="main_container_tools-icon-model_content-title">
+                              <h3>Your received new message from Ahmed</h3>
+                              <h4>jul 23, 2021 at 09:15 PM</h4>
+                           </div>
+                           <div class="main_container_tools-icon-model_content-img">
+                              <i class="fas fa-envelope"></i>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="main_container_tools-icon-model_base">
+                     <button>
+                        view all notifications
+                     </button>
+                  </div>
+               </div>
+               <div class="redDote"></div>
+            </div>
+            </div>
+            <div class="main_container_tools-user">
+               <img src="avatar-removebg-preview.png" alt="">
+               <p>medbendadi</p>
+               <div class="main_container_tools-user_modal">
+                  <div class="modal-arrow">
+                  </div>
+                  <div class="user_modal-title">
+                     <h2>
+                        Profile
+                     </h2>
+                     <h4>Edit Profile</h4>
+                  </div>
+                  <div class="user_modal-content">
+                     <ul>
+                        <li>
+                           <i class="fas fa-clock"></i>
+                           <h3>Watch later</h3>
+                        </li>
+                        <li>
+                           <i class="fas fa-user"></i>
+                           <h3>Users</h3>
+                        </li>
+                        <li>
+                           <i class="fas fa-heart  active"></i>
+                           <h3>Go Pro</h3>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="user_modal-footer">
+                     <h3>Account Settings</h3>
+                     <h3>Sign Out</h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="main_container-popular">
+      </div>
+      <div class="main_container-playing dark-mode">
+         <h1 class="main_container-playing-title">Playing Now</h1>
+         <ul class="main_container-playing-list">
+         </ul>
+      </div>
+
+
+      <div class="main_container-watching dark-mode">
+         <h1 class="main_container-watching-title">Upcoming</h1>
+         <ul class="main_container-watching-list">
+         </ul>
+      </div>
+
+      <div class="main_top-rated dark-mode">
+         <h1 class="main_top-rated-title">Top Rated</h1>
+         <ul class="main_top-rated-list">
+         </ul>
+      </div>
+      
+      
+      <div class="movie-container">
+         </div>
+   
+         
+         
+         
+      </main>
+      
+
+      <div class="movie-container" id="movie-container">
+      </div>
+   
+   
+   <script src="Assets/anime.min.js"></script>
+   <script src="Assets/main.js"></script>
+</body>
+</html>
